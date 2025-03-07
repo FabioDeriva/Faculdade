@@ -1,5 +1,6 @@
 print("Insira Um número")
 x = io.read()
+x = tonumber(x)
 
 print("A Tabuada do seu numero é:")
 print(x*1)
