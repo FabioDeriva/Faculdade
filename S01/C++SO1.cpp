@@ -33,7 +33,7 @@ class Aluno : Pessoa {
 int main() {
     Pessoa pessoa("Carlos", 40);
     Professor professor("Mariana", 35);
-    Aluno aluno("João", 20, 12345);
+    Aluno aluno("João", 20);
 
     pessoa.imprimirNome();
 
