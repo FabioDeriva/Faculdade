@@ -1,23 +1,19 @@
 using System;
 
-class Cachorro
-{
+class Cachorro{
     public string Nome { get; set; }
     public int Idade { get; set; }
 
-    public Cachorro(string nome, int idade)
-    {
+    public Cachorro(string nome, int idade) {
         Nome = nome;
         Idade = idade;
     }
 
-    public void MostrarNome()
-    {
+    public void MostrarNome() {
         Console.WriteLine($"O nome do cachorro é: {Nome}");
     }
 
-    public virtual void ShowIdade()
-    {
+    public virtual void ShowIdade() {
         Console.WriteLine($"A idade do cachorro é: {Idade}");
     }
 }
@@ -33,15 +29,13 @@ class CachorroPequeno : Cachorro
         Console.WriteLine($"Esse cachorrinho tem {Idade} anos!");
     }
 
-    public string GetTamanho()
-      {
+    public string GetTamanho() {
           return tamanho;
       }
     
 }
 
-class CachorroGrande : Cachorro
-{
+class CachorroGrande : Cachorro {
     private string tamanho;
 
     public CachorroGrande(string nome, int idade, string tamanho) : base(nome, idade){
@@ -57,10 +51,8 @@ class CachorroGrande : Cachorro
     }
 }
 
-class Program
-{
-    static void Main(string[] args)
-    {
+class Program{
+    static void Main(string[] args)  {
 
         Cachorro cachorro = new Cachorro("Tobby", 3);
         CachorroPequeno pequeno = new CachorroPequeno("Loiro", 2, "Pequeno");
