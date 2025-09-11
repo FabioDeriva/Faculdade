@@ -46,7 +46,7 @@ dsSomaE = df.loc['E'].sum()
 print("Soma E:", dsSomaE, '\n')
 
 #EX3 
-sliceACEeXY = df.loc[['A', 'C', 'E'],['X', 'Y']]
+sliceACEeXY = df.loc[['A', 'C', 'E'], ['X', 'Y']]
 print(sliceACEeXY)
 
 somandoAsLinhas = sliceACEeXY.sum(axis=1)
